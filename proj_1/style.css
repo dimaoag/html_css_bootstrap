@@ -1,0 +1,224 @@
+.container p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial;
+
+    font: italic bold 40px Arial;
+
+    text-align: justify;
+    line-height: 1.5;
+    text-decoration: line-through;
+    color: red;
+
+}
+
+
+.title {
+    color: red;
+}
+.container{
+    background-color: antiquewhite;
+    background-image: url('./img/bg.jpeg');
+    background-position: 100px 100px;
+    background-repeat: no-repeat;
+
+
+    background: darkcyan url("./img/bg.jpeg") center center no-repeat;
+
+
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-top-color : chartreuse;
+
+
+    border: 5px solid red;
+
+
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+
+    padding: 10px 25px 15px 20px;
+
+    /* 1 - top and bottom; 2 - left and right */
+    margin: 50px 20px;
+
+    position: relative;
+
+}
+
+.container img{
+    width: 150px;
+    float: left;
+}
+
+
+.clear{
+    clear: left;
+}
+
+.parent {
+    height: 500px;
+    width: 500px;
+    background-color: aquamarine;
+    border: 2px solid red;
+    position: absolute;
+    top: 200px;
+    left: 10px;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background-color: darkmagenta;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.block_bg_1 {
+    width: 400px;
+    height: 267px;
+    background: url('./bg/img2.png'), url('./bg/img1.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 100%, 100% 100%;
+
+}
+
+.block_bg_2 {
+    width: 400px;
+    height: 267px;
+    background: 
+        url('./bg/img2.png') no-repeat 100% 100%, 
+        url('./bg/img1.jpg') no-repeat 0% 0%;
+    background-size: 200px 50px, 10px 20px; 
+}
+
+.block_bg_3 {
+    width: 400px;
+    height: 267px;
+    border: 10px dotted #000;
+    padding: 10px;
+    background: #ff0000 url('bg/img2.png') no-repeat 100% 100%;
+    background-clip: content-box;
+    /*background-clip: border-box;  */
+    /*background-clip: padding-box;*/
+}
+
+.block_bg_4 {
+    width: 400px;
+    height: 267px;
+    border: 10px dotted #787;
+    padding: 10px;
+    background: #ff0000 url('bg/img2.png') no-repeat 100% 100%;
+    background-origin: content-box;
+    /*background-clip: border-box;  */
+    /*background-clip: padding-box;*/
+}
+
+.border div {
+    margin: 50px auto;
+    background-color: #ccc;
+    width: 80%;
+    height: 100px;
+}
+
+.border_block_1 {
+    border: 1px solid #000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.border_block_2 {
+    border: 22px solid #000033;
+    border-image: url(Border/borderimg.png) 22 round round;
+}
+
+.border_block_3 {
+    box-shadow: 10px 10px 30px -5px #ff0000, inset 10px 10px 30px -5px #ff0000;
+    box-shadow: 
+}
+
+
+.gradient div {
+    margin: 50px auto;
+    background-color: #ccc;
+    width: 250px;
+    height: 250px;
+}
+
+.gradient_block_1 {
+    background-image: -webkit-linear-gradient(#053232, #04f1f1);
+}
+
+.gradient_block_2 {
+    background-image: -webkit-linear-gradient(left,#053232, #04f1f1);
+}
+
+.gradient_block_3 {
+    background-image: -webkit-linear-gradient(left bottom,#053232, #04f1f1);
+}
+
+.gradient_block_4 {
+    background-image: -webkit-linear-gradient(#053232, #04f1f1 50%, #053232);
+}
+
+.gradient_block_5 {
+    background-image: -webkit-linear-gradient(#053232, #04f1f1, #053232, #04f1f1, #053232);
+}
+
+.gradient_block_6 {
+    background-image: -webkit-linear-gradient( 45deg,#053232, #04f1f1, #053232, #04f1f1, #053232);
+}
+
+.columns {
+    column-count: 3;
+    column-rule: 3px solid #000;
+    column-gap: 50px;
+
+}
+
+.columns p:first-child {
+    /*background-color: #0233;*/
+}
+
+.columns p:last-child {
+    /*background-color: #083;*/
+}
+
+.columns p:nth-child(even) { /* парні */
+    /*background-color: #083;*/
+}
+
+.columns p:nth-child(odd) { /* непарні */
+    /*background-color: #083;*/
+}
+
+.columns p:nth-child(3n-2) {
+    /*background-color: #083;*/
+}
+
+.columns p:nth-child(2) {
+    /*background-color: #083;*/
+}
+
+.columns p:nth-last-child(2) {
+    /*background-color: #083;*/
+}
+
+.columns p:nth-of-type(2n) { /* only <p> */
+    /*background-color: #083;*/
+}
+
+.input_text:disabled {
+
+}
+
+
+
+
+

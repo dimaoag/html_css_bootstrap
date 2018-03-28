@@ -1,0 +1,507 @@
+/* --------------- reset.css --------------- */
+body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;                               /* обнуляем отступы и убираем бордюры */
+    vertical-align: baseline;          /* приводим все к одной базовой линии */
+    background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+    font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+}
+input, select, button, textarea {
+    margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+    font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+    outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+    padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+    min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #606060;
+    text-align: left;
+    font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+    min-height:100%;
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+    color: #339933;
+    text-decoration: none;
+
+}
+a:hover {
+    color: #339933;
+    text-decoration:underline;
+}
+a:focus, a:active {
+    color: #c83867;
+    text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight:normal;
+}
+img{
+
+    max-width:100%;
+}
+.clr{
+    clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+
+header{
+    background-color: #292929;
+}
+
+.header-content{
+    margin: 0 auto;
+    max-width: 990px;
+    overflow: hidden;
+}
+
+
+.logo{
+    font-size: 40px;
+    display: block;
+    padding: 25px 35px;
+    float: left;
+    color: #fff;
+}
+
+.logo span{
+    color: #58c93a;
+
+}
+
+.header-menu{
+    float: right;
+    overflow: hidden;
+}
+
+.header-menu li{
+    float: left;
+    font-weight: 600;
+
+}
+
+.header-menu li a{
+    color: #fff;
+    display: block;
+    padding: 50px 35px;
+    border-bottom: 5px solid #292929;
+    border-left: 1px solid #1d1d1d;
+}
+
+.header-menu:last-child{
+    border-right: 1px solid #1d1d1d;
+}
+
+.header-menu li a:hover{
+    border-bottom: 5px solid #58c93a;
+    color: #58c93a;
+    text-decoration: none;
+}
+
+
+
+
+main{
+    background-color: #fff;
+}
+
+.main{
+    margin: 0 auto;
+    max-width: 990px;
+    overflow: hidden;
+    padding-top: 82px;
+    border: 1px solid #e1e0e0;
+    border-bottom: none;
+    border-top: none;
+}
+
+.content{
+    width: 62.5%;
+    float: left;
+}
+
+.content-image img{
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+.content-image:hover .publish{
+    display: block;
+    bottom: 5px;
+    transition: bottom 0.2s linear;
+}
+
+.content-image {
+    max-width: 100%;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+.publish{
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: -60px;
+    display: none;
+
+
+
+
+}
+
+.article h1 {
+    color: #4f4e4e;
+    font-size: 1.15em;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.84px;
+    padding: 20px 0 56px 21px;
+    text-align: justify;
+}
+
+.article p {
+    padding: 0 7px 25px 21px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+}
+
+.article button{
+    margin: 13px auto 85px 20px;
+    width: 186px;
+    height: 40px;
+    border: 2px solid #c2c2c2;
+    background-color: #ffffff;
+    color: #c2c1c1;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+    border-radius: 20px;
+}
+
+.article button:hover{
+    border-color: #58c93a;
+    cursor: pointer;
+    color: #58c93a;
+    transition: all 0.5s linear;
+
+
+}
+
+aside{
+    width: 28.3%;
+    float: right;
+}
+
+.label{
+    min-height: 50px;
+    width: 100%;
+    border-left: 5px solid #58c93a;
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+
+}
+
+.label p{
+    color: #6c6969;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 17px 0 20px 17px;
+    box-sizing: border-box;
+}
+
+.search{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 58px;
+    border: 1px solid #e1e0e0;
+    border-right: none;
+    padding-right: 60px;
+
+}
+
+.search::placeholder{
+    color: #b9b9b9;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    padding: 20px;
+}
+
+.aside-menu{
+    padding: 0 0 68px 20px;
+}
+
+.aside-menu li a{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: underline;
+    letter-spacing: 0.48px;
+
+}
+
+.aside-menu li a:hover{
+    text-decoration: none;
+}
+
+.subscribe{
+    width: 100%;
+    position: relative;
+}
+
+.subscribe button{
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    background-color: white;
+    border: none;
+}
+
+.subscribe button:hover{
+    cursor: pointer;
+}
+
+.pagination{
+    border-top: 1px solid #e1e0e0;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.pagination-previous{
+    float: left;
+    padding: 40px;
+}
+.pagination-previous a{
+    color: #818181;
+}
+
+.pagination-previous a:hover{
+    color: #58c93a;
+}
+
+.pagination-next{
+    float: right;
+    padding: 40px;
+}
+
+.pagination-next a{
+    color: #818181;
+}
+
+.pagination-next a:hover{
+    color: #58c93a;
+}
+
+footer{
+    background-color: #f8f8f8;
+    border-top: 1px solid #e1e0e0;
+    text-align: center;
+    font-size: 0.8125em;
+    padding: 50px 0;
+}
+
+.footer-content{
+    margin: 0 auto;
+    max-width: 990px;
+}
+
+.footer-content a{
+    color: #292929;
+    font-family: Eurofurenceregular sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+
+}
+
+.footer-content a:hover{
+    text-decoration: none;
+    color: #58c93a;
+
+}
+
+.logo-footer{
+    margin-bottom: 20px;
+
+}
+
+.logo-footer span{
+    color: #58c93a;
+}
+
+.text-footer span{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+
+    .logo{
+        font-size: 20px;
+        padding: 15px 15px;
+    }
+
+    .header-menu li a{
+        padding: 20px 20px;
+
+    }
+
+    main{
+        overflow-x:hidden;
+
+    }
+    .main{
+        width: 100%;
+        padding-top: 20px;
+
+    }
+
+    .content{
+        width: 100%;
+        float: none;
+    }
+
+    .content-image img{
+        width: 100%;
+    }
+
+    .article h1{
+        padding: 10px 0 10px 5px;
+
+    }
+
+    .article p{
+        padding-bottom: 7px;
+    }
+
+    .article button{
+        width: 150px;
+        height: 30px;
+        font-size: 0.85em;
+        border-radius: 15px;
+        margin-bottom: 30px;
+
+    }
+
+
+
+    aside{
+        width: 100%;
+        float: none;
+    }
+
+
+    .label{
+        text-align: center;
+    }
+
+    .label p{
+
+    }
+
+    .search{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 58px;
+        border: 1px solid #e1e0e0;
+        border-right: none;
+        padding-right: 60px;
+
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 480px){
+
+    .logo{
+        font-size: 20px;
+        padding: 10px 10px;
+        display: block;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .header-menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+    }
+
+
+    .header-menu li a{
+        padding: 2px 10px;
+    }
+
+
+
+
+}
